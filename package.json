@@ -1,0 +1,19 @@
+{
+  "name": "banco",
+  "version": "1.0.0",
+  "description": "Trabalho de TI",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FWsantos/the_bank.git"
+  },
+  "author": "Wesley Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FWsantos/the_bank/issues"
+  },
+  "homepage": "https://github.com/FWsantos/the_bank#readme"
+}
