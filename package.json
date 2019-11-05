@@ -4,7 +4,8 @@
   "description": "Trabalho de TI",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/FWsantos/the_bank/issues"
   },
-  "homepage": "https://github.com/FWsantos/the_bank#readme"
+  "homepage": "https://github.com/FWsantos/the_bank#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "electron": "^7.1.0",
+    "pg": "^7.12.1"
+  }
 }
