@@ -1,0 +1,15 @@
+1) (5 pts) Desenvolver um banco de dados em PostgreSQL ou Access, para a empresa definida pela equipe, contendo:
+	1)	Informações sobre os empregados, clientes e produtos da empresa;
+	2)	Pelo menos 5 setores com no mínimo 4 empregados em cada setor;
+	3)	Pelo menos 10 clientes distintos que consomem seus produtos  (no mínimo 8);
+	4)	Vendas mensais dos produtos para quase todos os clientes em pelo menos seis meses distintos do ano de 2012;
+	5)	Controle de entrada de matéria prima, quando for o caso, e saída dos produtos com nota(s) fiscal(is);
+	6)	Controle de presença dos funcionários;
+	7)	Folha mensal de pagamento dos funcionários da empresa com hora extra;
+	8)	Descrição dos produtos mais vendidos por semana;
+	9)	Descrição dos melhores clientes (aqueles que mais compram seus produtos);
+	10)	Balanço das despesas e receitas realizadas semanalmente.
+
+2) (2 pts) A apresentação deverá conter o MER, os scripts do banco de dados e os registros das tabelas no banco de dados usado.
+
+3) (3 pts) Na apresentação, a equipe será avaliada pelo professor para apresentar algumas consultas ao banco, podendo fazer uso do material usado na disciplina como fonte de consulta.
