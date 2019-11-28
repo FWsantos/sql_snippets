@@ -35,6 +35,7 @@ CREATE TABLE "tipo_conta" (
 	"limite_transferencia" integer NOT NULL,
 	"saque_max" FLOAT NOT NULL,
 	"saque_min" FLOAT NOT NULL,
+	"juros" FLOAT,
 	"limite_extrato" integer NOT NULL,
 	CONSTRAINT "tipo_conta_pk" PRIMARY KEY ("id")
 ) WITH (
@@ -82,6 +83,7 @@ CREATE TABLE "operacao_efetuada" (
 	"id_conta" integer NOT NULL,
 	"id_operacao" integer NOT NULL,
 	"data" DATE NOT NULL,
+	"valor" FLOAT NOT NULL,
 	CONSTRAINT "operacao_efetuada_pk" PRIMARY KEY ("id")
 ) WITH (
   OIDS=FALSE
@@ -155,7 +157,8 @@ CREATE TABLE "saida_funcionario" (
 
 CREATE TABLE "setor" (
 	"id" serial NOT NULL,
-	"nome_setor" varchar(80) NOT NULL,
+	"nome" varchar(80) NOT NULL,
+	"descricao" varchar(255) NOT NULL,
 	CONSTRAINT "setor_pk" PRIMARY KEY ("id")
 ) WITH (
   OIDS=FALSE
