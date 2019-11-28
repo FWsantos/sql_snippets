@@ -76,4 +76,16 @@ INSERT INTO public.operacao_efetuada(id, id_conta, id_operacao, data, valor)VALU
 	(19, 3, 1, '23/11/2012', 2000);
 
 -------------------------------------------------------------------------------------------------------------------------------
-INSERT INTO public
+INSERT INTO public.setor(id, nome_setor, descricao)VALUES
+	(1, 'TI', ''),
+	(2, 'Administração', ''),
+	(3, 'Almoxarifato', ''),
+	(4, 'Contabilidade', ''),
+	(5, 'Bancarios', 'Setor dos caixas e de outros funcionarios bancarios.');
+
+INSERT INTO public.cargo(id, id_setor, nome, descricao, salario, preco_hora_extra)VALUES
+	(1, 1, 'Analista de Banco de Dados', '', 3000, 120),
+	(1, 1, 'Analista de Banco de Dados', '', 3000, 120),
+
+
+INSERT INTO public.funcionario(id, id_agencia, id_cargo)
