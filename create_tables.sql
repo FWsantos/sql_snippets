@@ -1,10 +1,12 @@
 CREATE TABLE "conta" (
-	"id" integer NOT NULL UNIQUE,
+	"id" SERIAL NOT NULL,
 	"id_agencia" integer NOT NULL,
 	"id_cliente" integer NOT NULL,
 	"id_tipo_conta" integer NOT NULL,
 	"id_tipo_status_conta" integer NOT NULL,
 	"data_inicio" DATE NOT NULL,
+	"saldo" FLOAT NOT NULL,
+	"credito" FLOAT NOT NULL,
 	CONSTRAINT "conta_pk" PRIMARY KEY ("id")
 ) WITH (
   OIDS=FALSE
@@ -13,7 +15,7 @@ CREATE TABLE "conta" (
 
 
 CREATE TABLE "cliente" (
-	"id" integer NOT NULL UNIQUE,
+	"id" SERIAL NOT NULL,
 	"nome" varchar(80) NOT NULL,
 	"cpf" varchar(11) NOT NULL UNIQUE,
 	"rg" varchar(11) NOT NULL UNIQUE,
@@ -26,7 +28,7 @@ CREATE TABLE "cliente" (
 
 
 CREATE TABLE "tipo_conta" (
-	"id" integer NOT NULL UNIQUE,
+	"id" SERIAL NOT NULL,
 	"id_tipo_manutencao" integer NOT NULL,
 	"nome_tipo" varchar(80) NOT NULL,
 	"limite_saque" integer NOT NULL,
@@ -42,7 +44,7 @@ CREATE TABLE "tipo_conta" (
 
 
 CREATE TABLE "tipo_status_conta" (
-	"id" integer NOT NULL,
+	"id" SERIAL NOT NULL,
 	"nome_status_conta" varchar(80) NOT NULL,
 	"descricao" varchar(255) NOT NULL,
 	CONSTRAINT "tipo_status_conta_pk" PRIMARY KEY ("id")
@@ -53,7 +55,7 @@ CREATE TABLE "tipo_status_conta" (
 
 
 CREATE TABLE "tipo_operacao" (
-	"id" integer NOT NULL UNIQUE,
+	"id" SERIAL NOT NULL,
 	"nome" varchar(80) NOT NULL,
 	"descricao" varchar(255) NOT NULL,
 	CONSTRAINT "tipo_operacao_pk" PRIMARY KEY ("id")
@@ -64,7 +66,7 @@ CREATE TABLE "tipo_operacao" (
 
 
 CREATE TABLE "tipo_manutencao" (
-	"id" integer NOT NULL UNIQUE,
+	"id" SERIAL NOT NULL,
 	"nome" varchar(80) NOT NULL,
 	"valor_fixo" FLOAT NOT NULL,
 	"taxa_extra" FLOAT NOT NULL,
@@ -76,7 +78,7 @@ CREATE TABLE "tipo_manutencao" (
 
 
 CREATE TABLE "operacao_efetuada" (
-	"id" integer NOT NULL UNIQUE,
+	"id" SERIAL NOT NULL,
 	"id_conta" integer NOT NULL,
 	"id_operacao" integer NOT NULL,
 	"data" DATE NOT NULL,
@@ -114,7 +116,7 @@ CREATE TABLE "funcionario" (
 
 
 CREATE TABLE "cargo" (
-	"id" integer NOT NULL,
+	"id" SERIAL NOT NULL,
 	"id_setor" integer NOT NULL,
 	"descricao" varchar(255) NOT NULL,
 	"nome" varchar(80) NOT NULL,
