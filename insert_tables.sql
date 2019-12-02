@@ -88,4 +88,15 @@ INSERT INTO public.cargo(id, id_setor, nome, descricao, salario, preco_hora_extr
 	(1, 1, 'Analista de Banco de Dados', '', 3000, 120),
 
 
-INSERT INTO public.funcionario(id, id_agencia, id_cargo)
+INSERT INTO public.funcionario(id, id_agencia, id_cargo, nome, rg, endereco, vinculo) VALUES
+	(,,,,,,),
+	(,,,,,,);
+
+
+INSERT INTO public.entrada_funcionario(id, id_funcionario, data, horario) VALUES
+	(,,,,),
+	(,,,,);
+
+INSERT INTO public.saida_funcionario(id, id_funcionario, data, horario) VALUES
+	(,,,,),
+	(,,,,);
