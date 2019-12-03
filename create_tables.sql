@@ -134,7 +134,7 @@ CREATE TABLE "cargo" (
 CREATE TABLE "entrada_funcionario" (
 	"id" serial NOT NULL,
 	"id_funcionario" integer NOT NULL,
-	"data" DATE NOT NULL UNIQUE,
+	"data" DATE NOT NULL,
 	"horario" TIME NOT NULL,
 	CONSTRAINT "entrada_funcionario_pk" PRIMARY KEY ("id")
 ) WITH (

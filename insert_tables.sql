@@ -54,29 +54,29 @@ INSERT INTO public.conta(id, id_agencia, id_cliente, id_tipo_conta, id_tipo_stat
 ----------------------------------------------------------------------------------------------------------------------------
 
 INSERT INTO public.operacao_efetuada(id, id_conta, id_operacao, data, valor)VALUES
-	(1, 1, 2, '15/02/2012', 2000),
-	(2, 2, 2, '16/03/2012', 2000),
-	(3, 3, 2, '17/04/2012', 2000),
-	(4, 4, 2, '18/05/2012', 2000),
-	(5, 5, 2, '19/06/2012', 2000),
-	(6, 6, 2, '20/07/2012', 2000),
-	(7, 7, 2, '21/02/2012', 2000),
-	(8, 8, 2, '22/02/2012', 2000),
-	(9, 3, 2, '23/08/2012', 2000),
+	(1, 1, 2, '02/15/2012', 2000),
+	(2, 2, 2, '03/16/2012', 2000),
+	(3, 3, 2, '04/17/2012', 2000),
+	(4, 4, 2, '05/18/2012', 2000),
+	(5, 5, 2, '06/19/2012', 2000),
+	(6, 6, 2, '07/20/2012', 2000),
+	(7, 7, 2, '02/21/2012', 2000),
+	(8, 8, 2, '02/22/2012', 2000),
+	(9, 3, 2, '08/23/2012', 2000),
 
-	(10, 1, 2, '24/02/2012', 2000),
-	(11, 1, 1, '15/04/2012', 2000),
-	(12, 2, 1, '16/04/2012', 2000),
-	(13, 3, 1, '17/05/2012', 2000),
-	(14, 4, 1, '18/06/2012', 2000),
-	(15, 5, 1, '19/07/2012', 2000),
-	(16, 6, 1, '20/08/2012', 2000),
-	(17, 7, 1, '21/09/2012', 2000),
-	(18, 8, 1, '22/10/2012', 2000),
-	(19, 3, 1, '23/11/2012', 2000);
+	(10, 1, 2, '02/24/2012', 2000),
+	(11, 1, 1, '04/15/2012', 2000),
+	(12, 2, 1, '04/16/2012', 2000),
+	(13, 3, 1, '05/17/2012', 2000),
+	(14, 4, 1, '06/18/2012', 2000),
+	(15, 5, 1, '07/19/2012', 2000),
+	(16, 6, 1, '08/20/2012', 2000),
+	(17, 7, 1, '09/21/2012', 2000),
+	(18, 8, 1, '10/22/2012', 2000),
+	(19, 3, 1, '11/23/2012', 2000);
 
 -------------------------------------------------------------------------------------------------------------------------------
-INSERT INTO public.setor(id, nome_setor, descricao)VALUES
+INSERT INTO public.setor(id, nome, descricao)VALUES
 	(1, 'TI', ''),
 	(2, 'Administração', ''),
 	(3, 'Almoxarifato', ''),
@@ -85,18 +85,44 @@ INSERT INTO public.setor(id, nome_setor, descricao)VALUES
 
 INSERT INTO public.cargo(id, id_setor, nome, descricao, salario, preco_hora_extra)VALUES
 	(1, 1, 'Analista de Banco de Dados', '', 3000, 120),
-	(1, 1, 'Analista de Banco de Dados', '', 3000, 120),
-
-
+	(2, 2, 'Gestor de Consulta', '', 2600, 80),
+	(3, 2, 'Diretor', '', 5000, 200 ),
+	(4, 2, 'Tesoureiro', '', 2600, 80),
+	(5, 2, 'Contador', '', 2600, 80),
+	(6, 2, 'Analista', '', 2600, 80),
+	(7, 5, 'Atendente Comercial', '', 2600, 80),
+	(8, 2, 'Gerente de Conta', '', 2600, 80),
+	(9, 3, 'faxineiro', '', 2600, 80),
+	(10, 3, 'Auxiliar de Limpeza', '', 2600, 80),
+	(11, 2, 'Sub Gerente', '', 2600, 80),
+	(12, 2, 'Auxiliar de Gerencia', '', 2600, 80),
+	(13, 2, 'Coordenador', '', 2600, 80),
+	(14, 2, 'Estagiario', '', 2600, 80),
+	(15, 2, 'fiscal', '', 2600, 80),
+	(16, 2, 'Vice-Diretor', '', 2600, 80),
+	(17, 2, 'Gestor de Consulta', '', 2600, 80);
+--------------------------------------------------------------------------------------------
 INSERT INTO public.funcionario(id, id_agencia, id_cargo, nome, rg, endereco, vinculo) VALUES
-	(,,,,,,),
-	(,,,,,,);
-
-
-INSERT INTO public.entrada_funcionario(id, id_funcionario, data, horario) VALUES
-	(,,,,),
-	(,,,,);
-
-INSERT INTO public.saida_funcionario(id, id_funcionario, data, horario) VALUES
-	(,,,,),
-	(,,,,);
+	(1, 1, 1,'Pedro Alberto Mendonça Pontes', '96824635057','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(2, 1, 2,'Sandra Alcantara de Albuquerque', '79236198082','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(3, 3, 3,'Leomara Cavalcante de Sá', '53276192063','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(4, 2, 4,'Thais Lopes de Abreu', '21512823090','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(5, 3, 5,'Emmnuelle Souza ferreira', '51490938079','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(6, 3, 6,'Karla Queiroz de Lima', '42556832045','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(7, 3, 7,'Vitoria Feitosa dos Anjos', '34793735002','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(8, 1, 8,'Veridiana da Silva Mendes', '38010858056','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(9, 2, 9,'Thamirez Cavalcante de Abreu', '62639225064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(10, 1, 10,'Yasmin Feitosa de Sá', '63639225064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(11, 2, 11,'Leticia Albuquerque Feitosa', '64639225064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(12, 2, 12,'Luana lima da Costa Silva', '65639225064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(13, 2, 13,'Maria Wanessa Silva', '66639225064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(14, 3, 14,'Ilana Torres Fontes', '67639225064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(15, 2, 15,'Ana Beatriz de Souza', '61839225064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(16, 1, 16,'Maria Sabrina Lopez', '61993922506','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(17, 1, 17,'Gabriela Maia Freitas', '56639225064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(18, 3, 4,'Ana Sarah Feitosa Lima ', '61689225064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(19, 3, 4,'Maria Karol Feitosa ', '61639345064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(20, 2, 12,'Jessica Miranda da Silva Abreu ', '61633455064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(21, 2, 15,'Angelica Miranda da Silva ', '61639223574','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(22, 1, 3,'Maria Angelica Feitosa Souza ', '61639876064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true),
+	(23, 1, 3,'Ana Thais dos Santos ', '61928374064','Brasil-Ceará-Fortaleza-Parangaba-Rua Carlos Roberto, 999 - 6000000', true);
